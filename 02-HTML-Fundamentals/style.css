@@ -1,9 +1,9 @@
-h1,
-h2,
-h3,
-h4,
-p,
-li {
+/* Universal selector, lowest priotrity */
+/* * {
+  border-top: 10px solid #1098ad;
+} */
+
+body {
   font-family: sans-serif;
   color: #444;
 }
@@ -132,4 +132,30 @@ a:hover {
 a:active {
   background-color: black;
   font-style: italic;
+}
+/* LVHA to remeber order of properties for links */
+
+/* resolving conflicts */
+/* Id selector has highest priority */
+/* #copyright {
+  color: red;
+} */
+
+/* the class selectors have the same priority, last one will be applied */
+/* .copyright {
+  color: blue;
+} */
+
+/* .text {
+  color: yellow;
+} */
+
+/* element selector has lowest priotrity, only applies if all other are not used */
+/* !important will overide priorites */
+/* footer p {
+  color: green !important;
+} */
+
+nav {
+  font-size: 18px;
 }

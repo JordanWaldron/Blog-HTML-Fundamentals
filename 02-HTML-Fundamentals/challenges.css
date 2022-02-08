@@ -93,6 +93,10 @@ body {
   clear: both;
 }
 
+/* .container {
+  background-color: blue;
+} */
+
 .product-img {
   float: left;
   margin-right: 40px;
